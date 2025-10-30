@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info Card - Selector & Refresh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <label for="city-select">Select City:</label>
+        <select id="city-select"></select>
+    </div>
+
+    <div id="weather-card" class="weather-card">
+        <h2 id="location"></h2>
+        <div class="temperature-container">
+            <span id="temperature"></span>
+            <span class="degree-symbol">°C</span>
+        </div>
+        <p id="condition"></p>
+        <button id="refresh-button">Refresh</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

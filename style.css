@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    transition: background-color 0.8s ease;
+}
+
+.controls {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#city-select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+#city-select:hover {
+    transform: translateY(-5px);
+}
+
+#city-select:focus {
+    outline: none;
+    border-color: #4682b4;
+}
+
+.weather-card {
+    width: 300px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    text-align: center;
+    transition: background-color 0.8s ease, transform 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+.sunny {
+    background: linear-gradient(135deg, #ff9f1c, #ffcd3c); 
+}
+
+.cloudy {
+    background: linear-gradient(135deg, #708090, #a9a9a9);
+}
+
+.rainy {
+    background: linear-gradient(135deg, #4682b4, #5f9ea0);
+}
+
+.snowy {
+    background: linear-gradient(135deg, #e0ffff, #b0e0e6);
+    color: #333333;
+}
+
+#location {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.temperature-container {
+    margin: 10px 0 20px 0;
+}
+
+#temperature {
+    font-size: 4.5em;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.degree-symbol {
+    font-size: 1.5em;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+#condition {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 30px; }
+
+#refresh-button {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#refresh-button:hover {
+    background-color: white;
+    color: #333; 
+}
+
+.snowy #refresh-button {
+    color: #333333;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.snowy #refresh-button:hover {
+    color: white;
+    background-color: #4682b4;
+}
